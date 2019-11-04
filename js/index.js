@@ -54,7 +54,6 @@ button.forEach(item => {
     item.addEventListener("dblclick", (event) => {
         item.style.backgroundColor = "";
         item.style.color = "";
-        event.preventDefault();
     });
 });
 
@@ -67,9 +66,23 @@ function logKey(key) {
 
 
 // * [9]
+const theFunBus = document.querySelector(".logo-heading");
+theFunBus.addEventListener("mouseover", () => {
+        theFunBus.style.color = "blue";
+        theFunBus.style.fontSize = "5em";
+        theFunBus.style.textShadow = "1px 1px 2px black";
+        theFunBus.style.transform = "scale(1.5)";
+        theFunBus.style.transition = "all 0.5s";
+    });
 
 
 // * [10]
-
+theFunBus.addEventListener("mouseout", () => {
+        theFunBus.style.color = "";
+        theFunBus.style.fontSize = "";
+        theFunBus.style.textShadow = "";
+        theFunBus.style.transform = "";
+        theFunBus.style.transition = "all 0.5s";
+    });
 
 
