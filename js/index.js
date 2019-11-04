@@ -9,9 +9,12 @@ test.forEach(item => {
     });
 });
 
-    
-// * [ ] `keydown`
-
+// * [ ] `mouseout`
+test.forEach(item => {
+    item.addEventListener("mouseout", () => {
+        item.style.color = "";
+    });
+});
 
 // * [ ] `wheel`
 
