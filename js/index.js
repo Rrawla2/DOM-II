@@ -1,26 +1,36 @@
 // Your code goes here
 // * [ ] `mouseover`
-let test = document.querySelectorAll(".nav-link");
-console.log("test", test);
+let funBus = document.querySelectorAll(".nav-link");
 
-test.forEach(item => {
+
+funBus.forEach(item => {
     item.addEventListener("mouseover", () => {
         item.style.color = "green";
     });
 });
 
 // * [ ] `mouseout`
-test.forEach(item => {
+funBus.forEach(item => {
     item.addEventListener("mouseout", () => {
         item.style.color = "";
     });
 });
 
-// * [ ] `wheel`
+// * [ ] `mouseenter`
+funBus.forEach(item => {
+    item.addEventListener("mouseenter", () => {
+        item.style.transform = "scale(1.5)";
+        item.style.transition = "all 0.5s";
+    });
+});
 
-
-// * [ ] `drag / drop`
-
+// * [ ] `mouseleave`
+funBus.forEach(item => {
+    item.addEventListener("mouseleave", () => {
+        item.style.transform = "";
+        item.style.transition = "all 0.5s";
+    });
+});
 
 // * [ ] `load`
 
